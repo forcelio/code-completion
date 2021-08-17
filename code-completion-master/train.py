@@ -65,7 +65,7 @@ def train(config):
     )
     
     start_epoch = 0
-    if config.train.LOAD_EPOCH is not None:
+    if config.train.LOAD_EPOCH is not None and config.is_load:
         cpk = torch.load('checkpoints/%s/epoch_%04d.pth' % (config.name, config.train.LOAD_EPOCH))
         model.load_state_dict(cpk['model'])
         model = model.to(device)
