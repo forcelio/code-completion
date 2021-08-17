@@ -1,2 +1,2 @@
-# code-completion
-reproduction of code completion
+# pointer network
+reproduction of ijcai-18 pointer network
